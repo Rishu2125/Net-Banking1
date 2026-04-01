@@ -1,0 +1,386 @@
+* {
+  box-sizing: border-box;
+}
+
+.profile-page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #eaf1ff 0%, #f5f7fb 18%, #f8fafc 100%);
+  padding: 28px;
+}
+
+.profile-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.bank-topbar {
+  background: linear-gradient(135deg, #0f2b6b, #163d8f);
+  color: #fff;
+  border-radius: 24px;
+  padding: 26px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 20px 40px rgba(15, 43, 107, 0.18);
+  margin-bottom: 24px;
+}
+
+.bank-topbar h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.bank-topbar p {
+  margin: 6px 0 0;
+  opacity: 0.9;
+  font-size: 14px;
+}
+
+.topbar-badge {
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.search-card,
+.details-card,
+.customer-summary {
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(210, 220, 240, 0.7);
+  box-shadow: 0 16px 35px rgba(27, 45, 94, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.search-card {
+  border-radius: 22px;
+  padding: 24px;
+  margin-bottom: 18px;
+}
+
+.section-heading,
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section-heading h2,
+.card-title h3 {
+  margin: 0;
+  color: #12213f;
+}
+
+.section-heading p {
+  margin: 4px 0 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.section-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #e9f0ff;
+  color: #1849a9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-form {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+  align-items: end;
+}
+
+.search-input-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.search-input-wrap label,
+.form-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #334155;
+}
+
+.search-input-wrap input,
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  border: 1px solid #d6ddeb;
+  background: #fff;
+  border-radius: 14px;
+  padding: 13px 15px;
+  font-size: 15px;
+  color: #0f172a;
+  transition: 0.25s ease;
+}
+
+.search-input-wrap input:focus,
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #2f67d8;
+  box-shadow: 0 0 0 4px rgba(47, 103, 216, 0.12);
+}
+
+.search-actions,
+.action-bar {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 14px;
+  padding: 13px 18px;
+  font-weight: 600;
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.primary-btn {
+  background: linear-gradient(135deg, #1f57c3, #143f99);
+  color: white;
+  box-shadow: 0 10px 20px rgba(31, 87, 195, 0.22);
+}
+
+.primary-btn:hover {
+  transform: translateY(-1px);
+}
+
+.secondary-btn {
+  background: #eef2f8;
+  color: #24324a;
+}
+
+.secondary-btn:hover {
+  background: #e4ebf5;
+}
+
+.primary-btn:disabled,
+.secondary-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.alert {
+  border-radius: 16px;
+  padding: 14px 16px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.success-alert {
+  background: #ecfdf3;
+  border: 1px solid #b7efcc;
+  color: #166534;
+}
+
+.error-alert {
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  color: #b42318;
+}
+
+.customer-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.customer-summary {
+  border-radius: 22px;
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.customer-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #1d4ed8, #153f98);
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customer-main {
+  flex: 1;
+}
+
+.customer-main h2 {
+  margin: 0 0 10px;
+  color: #0f172a;
+  font-size: 24px;
+}
+
+.customer-meta {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+  color: #475569;
+  font-size: 14px;
+}
+
+.customer-meta span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.status-pill {
+  background: #ecfdf3;
+  color: #15803d;
+  padding: 10px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  border: 1px solid #bbf7d0;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.details-card {
+  border-radius: 22px;
+  padding: 22px;
+}
+
+.full-card {
+  grid-column: 1 / -1;
+}
+
+.card-title {
+  margin-bottom: 18px;
+  color: #16305e;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.readonly-field {
+  background: #f8fafc !important;
+  color: #64748b;
+  cursor: not-allowed;
+}
+
+.info-note {
+  background: #f8fbff;
+  border: 1px dashed #bfd1f7;
+  color: #334155;
+  border-radius: 16px;
+  padding: 16px;
+  line-height: 1.6;
+}
+
+.action-bar {
+  justify-content: flex-end;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(210, 220, 240, 0.7);
+  box-shadow: 0 16px 35px rgba(27, 45, 94, 0.08);
+  border-radius: 22px;
+  padding: 18px 20px;
+  position: sticky;
+  bottom: 14px;
+  backdrop-filter: blur(10px);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+@media (max-width: 992px) {
+  .details-grid,
+  .form-grid,
+  .search-form {
+    grid-template-columns: 1fr;
+  }
+
+  .customer-summary {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .customer-status {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .profile-page {
+    padding: 16px;
+  }
+
+  .bank-topbar {
+    padding: 20px;
+    border-radius: 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .bank-topbar h1 {
+    font-size: 22px;
+  }
+
+  .search-card,
+  .details-card,
+  .customer-summary,
+  .action-bar {
+    border-radius: 18px;
+  }
+
+  .search-actions,
+  .action-bar {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

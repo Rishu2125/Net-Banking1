@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.loan-history-page {
+  min-height: 100vh;
+  width: 100%;
+  padding: 30px 24px;
+  background: #f4f7fb; /* ✅ light background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container */
+.loan-history-container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Header */
+.loan-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  padding: 20px 24px;
+  border-radius: 16px;
+  background: #ffffff; /* ✅ white like real banking */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  flex-wrap: wrap;
+}
+
+.loan-history-header h1 {
+  font-size: 26px;
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.loan-history-header p {
+  color: #64748b;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.loan-history-header p span {
+  color: #0f172a;
+  font-weight: 600;
+}
+
+/* Back Button */
+.back-btn {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.back-btn:hover {
+  background: #1e40af;
+}
+
+/* Table Wrapper */
+.loan-table-wrapper {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+  overflow-x: auto;
+}
+
+/* Table */
+.loan-history-table {
+  width: 100%;
+  min-width: 1100px;
+  border-collapse: collapse;
+}
+
+/* Header Row */
+.loan-history-table thead {
+  background: #1d4ed8; /* ✅ only header blue */
+}
+
+.loan-history-table th {
+  color: white;
+  padding: 14px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Body */
+.loan-history-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  font-size: 14px;
+  color: #334155;
+}
+
+/* Row Hover */
+.loan-history-table tbody tr:hover {
+  background: #f1f5f9;
+}
+
+/* Alternate rows */
+.loan-history-table tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* Loan Ref */
+.loan-ref {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+/* Amount Highlight */
+.loan-history-table td:nth-child(2),
+.loan-history-table td:nth-child(5),
+.loan-history-table td:nth-child(9) {
+  font-weight: 600;
+  color: #0f172a;
+}
+
+/* Loading & Error */
+.loan-state-card {
+  background: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  color: #475569;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.error-message {
+  color: red;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .loan-history-page {
+    padding: 15px;
+  }
+
+  .loan-history-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .back-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

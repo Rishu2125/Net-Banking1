@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.apply-loan-page {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(180deg, #f8fbff 0%, #eef4fb 100%);
+  padding: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.apply-loan-container {
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* Header */
+.apply-loan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: #ffffff;
+  border-radius: 22px;
+  padding: 24px 28px;
+  box-shadow: 0 12px 35px rgba(15, 23, 42, 0.07);
+  border: 1px solid #e8eef6;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.bank-logo {
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 800;
+  box-shadow: 0 10px 22px rgba(29, 78, 216, 0.22);
+}
+
+.header-left h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 6px;
+}
+
+.header-left p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.header-left p span {
+  color: #0f172a;
+  font-weight: 700;
+}
+
+.back-btn {
+  border: 1px solid #cfd9e6;
+  background: #ffffff;
+  color: #0f172a;
+  padding: 12px 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+
+.back-btn:hover {
+  background: #f8fafc;
+  transform: translateY(-1px);
+}
+
+/* Main Grid */
+.apply-loan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 24px;
+}
+
+/* Left info card */
+.info-card {
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: #ffffff;
+  border-radius: 24px;
+  padding: 32px 28px;
+  box-shadow: 0 16px 35px rgba(15, 23, 42, 0.14);
+  min-height: 100%;
+}
+
+.info-card h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.info-card p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 26px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.info-dot {
+  width: 10px;
+  height: 10px;
+  background: #93c5fd;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Form card */
+.form-card {
+  background: #ffffff;
+  border-radius: 24px;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.07);
+  border: 1px solid #e8eef6;
+  padding: 30px;
+}
+
+.loan-form {
+  width: 100%;
+}
+
+.form-top {
+  margin-bottom: 22px;
+}
+
+.form-top h2 {
+  font-size: 26px;
+  color: #0f172a;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.form-top p {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.form-message {
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: #f8fbff;
+  border: 1px solid #dce8f7;
+  color: #334155;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #0f172a;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  height: 52px;
+  border: 1px solid #dbe4ee;
+  border-radius: 14px;
+  padding: 0 16px;
+  font-size: 14px;
+  color: #0f172a;
+  background: #ffffff;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1d4ed8;
+  box-shadow: 0 0 0 4px rgba(29, 78, 216, 0.08);
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+/* Submit */
+.submit-btn {
+  width: 100%;
+  height: 54px;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0b57d0, #1d4ed8);
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s ease;
+  box-shadow: 0 10px 20px rgba(29, 78, 216, 0.18);
+  margin-top: 8px;
+}
+
+.submit-btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.97;
+}
+
+.submit-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .apply-loan-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .apply-loan-page {
+    padding: 16px;
+  }
+
+  .apply-loan-header {
+    padding: 20px;
+  }
+
+  .header-left h1 {
+    font-size: 24px;
+  }
+
+  .back-btn {
+    width: 100%;
+  }
+
+  .form-card,
+  .info-card {
+    padding: 22px 18px;
+  }
+
+  .form-top h2,
+  .info-card h2 {
+    font-size: 22px;
+  }
+
+  .bank-logo {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+  }
+}

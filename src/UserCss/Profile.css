@@ -1,0 +1,387 @@
+.profile-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  padding: 28px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #1e293b;
+}
+
+.profile-topbar {
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: white;
+  border-radius: 24px;
+  padding: 28px 32px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.15);
+}
+
+.profile-topbar h1 {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.profile-topbar p {
+  margin-top: 6px;
+  font-size: 14px;
+  color: #dbeafe;
+}
+
+.topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.customer-badge {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 10px 14px;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.customer-avatar {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: white;
+  color: #1d4ed8;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.customer-badge h4 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.customer-badge p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  color: #e2e8f0;
+}
+
+.primary-btn,
+.secondary-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 11px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.primary-btn {
+  background: #1d4ed8;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1e40af;
+}
+
+.secondary-btn {
+  background: white;
+  color: #0f172a;
+}
+
+.secondary-btn:hover {
+  background: #e2e8f0;
+}
+
+.profile-summary-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.summary-left {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+
+.summary-avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1d4ed8, #0f172a);
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.summary-left h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #0f172a;
+}
+
+.summary-left p {
+  margin: 6px 0 10px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.profile-tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.summary-right {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.summary-box {
+  min-width: 180px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.summary-box span {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.summary-box strong {
+  color: #0f172a;
+  font-size: 16px;
+}
+
+.profile-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.profile-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+}
+
+.full-width {
+  grid-column: 1 / -1;
+}
+
+.card-header {
+  margin-bottom: 18px;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #0f172a;
+}
+
+.card-header p {
+  margin-top: 6px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.profile-item {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.profile-label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.profile-value {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #0f172a;
+  word-break: break-word;
+}
+
+.address-block {
+  margin-top: 18px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.address-block label {
+  display: block;
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 8px;
+}
+
+.address-block p {
+  margin: 0;
+  color: #0f172a;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.action-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.service-action {
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  color: #0f172a;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.service-action:hover {
+  background: #e2e8f0;
+}
+
+.primary-action {
+  background: #1d4ed8;
+  color: white;
+  border: none;
+}
+
+.primary-action:hover {
+  background: #1e40af;
+}
+
+.profile-page-state {
+  min-height: 100vh;
+  background: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profile-loader-card,
+.profile-error-card {
+  width: 100%;
+  max-width: 420px;
+  background: white;
+  border-radius: 22px;
+  padding: 32px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.1);
+}
+
+.profile-loader-card h2,
+.profile-error-card h2 {
+  margin: 14px 0 8px;
+  color: #0f172a;
+}
+
+.profile-loader-card p,
+.profile-error-card p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.loader-spinner {
+  width: 46px;
+  height: 46px;
+  border: 4px solid #dbeafe;
+  border-top: 4px solid #1d4ed8;
+  border-radius: 50%;
+  margin: 0 auto;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1100px) {
+  .profile-content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .profile-page {
+    padding: 16px;
+  }
+
+  .profile-topbar {
+    padding: 22px 18px;
+  }
+
+  .profile-summary-card {
+    padding: 18px;
+  }
+
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .summary-right {
+    width: 100%;
+  }
+
+  .summary-box {
+    width: 100%;
+  }
+}
